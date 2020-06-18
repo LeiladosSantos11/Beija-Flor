@@ -11,6 +11,14 @@
 *::after {
   box-sizing: border-box;
 }
+
+.container-parent {
+}
+
+img {
+  max-width: 100%;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,600");
 
 nav {
@@ -28,16 +36,15 @@ ul {
 ul:after {
   content: "";
   display: inline-block;
-  width: 100%;
 }
 li {
   display: inline-block;
+  display: ;
 }
 
 /* navigation styles start here */
 
 .navbar {
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -48,9 +55,9 @@ li {
 nav ul {
   list-style: none;
   display: block;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+
+  margin: 0px;
+  padding: 20px;
   text-align: right;
   margin-bottom: -1.4em;
   color: #c70039;
@@ -70,7 +77,6 @@ nav ul {
 ul:after {
   content: "";
   display: inline-block;
-  width: 100%;
 }
 li {
   display: inline-block;
@@ -86,7 +92,7 @@ li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   border: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -98,7 +104,7 @@ li a:hover {
   display: flex;
   justify-content: center;
   text-align: center;
-  padding: 0px;
+  padding: 0px 10px;
 }
 
 .heading-bf {
@@ -106,9 +112,11 @@ li a:hover {
   justify-content: center;
   text-align: center;
   color: #bc658d;
-  padding-top: 30px;
+  padding: 30px 10px 0px 10px;
+
   font-size: 80px;
   font-weight: 1000;
+  margin: 0px;
 }
 #About {
   background-image: url(../Images/yeshi-kangrang-14RqNPmDOno-unsplash.jpg);
@@ -118,7 +126,7 @@ li a:hover {
   width: 100vw;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
+  margin: 0px;
 }
 
 .about2 {
@@ -224,10 +232,9 @@ li a:hover {
 
 div .div7 {
   background-color: #343a40;
-  max-width: 100vw;
-  height: auto;
-  width: 100vw;
-  height: auto;
+  width: 100%;
+  height: 100%;
+
   color: white;
 
   padding-bottom: 0px;
@@ -308,4 +315,31 @@ ul.list-contact {
 
 .p-contact {
   color: #bc658d;
+}
+
+.container-parent {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.header .main .footer {
+  width: 100%;
+}
+
+@media (min-width: 300px) {
+  .header .main .footer {
+    width: 50%;
+  }
+
+  .header .first-heading {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 800px) {
+  header .main .footer {
+    width: 60%;
+  }
 }
